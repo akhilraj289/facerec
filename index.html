@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Mesh Application</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Face Mesh Application</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" id="videoInput" accept="video/*" />
+        <button type="submit">Upload Video</button>
+    </form>
+
+    <div id="videoContainer">
+        <video id="videoPlayer" controls></video>
+        <canvas id="canvasOutput"></canvas>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
